@@ -9,7 +9,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://shubham:shubham@cluster0.m98xvio.mongodb.net/'),
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/your_database_name')
+  //  MongooseModule.forRoot('mongodb+srv://TEST_Dev:qwerty123456@cluster0.m98xvio.mongodb.net/'),
   ],
   controllers: [],
   providers: [],

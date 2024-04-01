@@ -5,9 +5,9 @@ import { AdminDetailsDB } from '../admin.schema';
 
 @Injectable()
 export class AdminService {
-   //  constructor(private adminModel:Model<AdminDetailsDB>){}
-   //   async createAdmin(adminDetails:AdminDetailsDB){
-   //      const admin=""
-   //    //  admin.save()
-  //   }
+     constructor(private adminModel:Model<AdminDetailsDB>){}
+      async createAdmin(adminDetails:AdminDetailsDB){
+         const admin=new this.adminModel(adminDetails)
+     admin.save()
+     }
 }
